@@ -16,7 +16,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 设置导航栏颜色 
+    [[UINavigationBar appearance]setBarTintColor:[UIColor blackColor]];
+
+    // 设置状态栏颜色 (黑底白字)
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; 
+    
+
+    
+    //启动图的时间
+    [NSThread sleepForTimeInterval:3];
+    
+    
+    
     return YES;
 }
 
